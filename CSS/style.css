@@ -1,0 +1,257 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.header{
+    border-bottom: black solid 2px;
+}
+
+.navbar-brand{
+    color: black;
+    font-family: 'Dancing Script', cursive;
+    font-size: 2rem;
+}
+
+.nav-item{
+    color: black;
+    font-family :'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 1.2rem;
+}
+
+.nav-link{   
+    color: black;
+    font-family :'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 1.2rem;
+}
+
+.cuerpo{
+    background-color: #F29494;
+    width: 85vw;
+    height: 100vh;
+    margin: 0 auto;
+    border-left: black solid 1px;
+    border-right: black solid 1px;
+}
+
+.pie_pagina{
+    background-color: #F29863;
+    width: 100%;
+    height: 30%;
+    border-top: black solid 3px;
+    display: flex;
+}
+
+.logo{
+    margin-right: 5px;
+}
+
+.contenedor_icono svg{
+    width: 30px;
+    height: 30px;
+}
+
+.contenedor_icono{
+    margin-right: 10px;
+    color: black;
+}
+
+.contenedor_pie_pagina{
+    width: 100%;
+}
+
+.contactos_pie_pagina{
+    margin-top: 15px;
+    display: flex;
+}
+
+.contactos{
+    margin-top: 15px;
+    display: flex;
+}
+
+.iconos{
+    display: flex;
+}
+
+
+.link_pie_pagina{
+    font-style: normal;
+    text-decoration: none;
+    margin-left: 3px;
+    margin-top: 2px;
+    color: black;
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 1rem;
+}
+
+.link{
+    font-style: normal;
+    text-decoration: none;
+    margin-left: 3px;
+    margin-top: 2px;
+    color: black;
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 1rem;
+}
+
+
+#contenedor_texto{
+    width: 50%;
+    height: 100%;
+    margin-left: 30%;
+    margin-top: 3%;
+    padding-right: 10px;
+}
+
+.texto{
+    width: 100%;
+    height: 100%;
+}
+
+.mapa{
+    width: 50%;
+    height: 50%;
+    margin-top: 8%;
+    margin-left: 20px;
+}
+
+.boton.cinco span {
+	transition: .4s ease-in-out all;
+	position: absolute;
+	left: 40%;
+}
+
+.boton.cinco .icono {
+	display: flex;
+	align-items: center;
+	position: absolute;
+	z-index: 2;
+	left: -40px;
+	transition: .3s ease-in-out all;
+	opacity: 0;
+}
+
+.boton.cinco svg {
+	color: #fff;
+	width: 35px;
+	height: 35px;
+}
+
+.boton.cinco:hover {
+	background: #2f9b05;
+}
+
+.boton.cinco:hover .icono {
+	left: calc(100% - 50px);
+	opacity: 1;
+}
+
+.boton.cinco:hover span {
+	left: 20px;
+}
+
+.slide img{
+    height: 90vh;
+}
+
+.slide{
+    margin: 0 auto;
+    width: 70vw;
+    padding-top: 40px;
+}
+
+#facebook{
+    color: rgb(0, 0, 184);
+    margin-left: 20px;
+}
+
+#whatsapp{
+    color: green;
+    margin-left: 20px;
+}
+
+#instagram{
+    color: rgb(177, 35, 177);
+    margin-left: 20px;
+}
+
+#gmail{
+    color: red;margin-left: 20px;
+}
+
+@media (max-width: 347px){
+    .logo{
+        display: none;
+    }
+}
+
+@media (min-width: 991px){
+    .contenedor_pie_pagina{
+        display: flex;
+        align-content: space-around;
+        margin: 0 auto;
+    }
+
+    #facebook{
+        margin-top: 15px;
+    }
+}
+
+
+@media (max-width: 991px){
+    .iconos{
+        display: none;
+    }
+    .cuerpo{
+        background-color: #F29494;
+        width: 100vw;
+        height: 100vh;
+        border: none;
+    }
+
+    #contenedor_texto{
+        width: 50%;
+        height: 100%;
+        margin-left: 25%;
+        margin-top: 3%;
+        padding-right: 20px;
+    }
+}
+
+@media (min-width: 391px){
+    .contenedor_contactos{
+        display: flex;
+        height: 20%;
+    }
+
+}
+
+@media (max-width: 391px){
+    .logo{
+        width: 50px;
+        height: 30px;
+    }
+    
+    #contenedor_texto{
+        height: 90px;
+        width: 90%;
+        margin-left: 20px;
+    }
+
+    .mapa{
+        width: 90%;
+
+    }
+
+}
+
+@media (min-width: 991px){
+    #carrito{
+        display: none;
+    }
+    #usuario{
+        display: none;
+    }
+}
